@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { Poppins } from '@next/font/google'
+import { Poppins, Lora, Oswald } from '@next/font/google'
 
 import Home from './page'
 import Navigation from '@/components/Navigation/Navigation'
+import Main from '@/components/Main/Main'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -19,7 +20,8 @@ const layout = ({ children }: { children: React.ReactNode }) => {
     <html>
       <body className={poppins.className}>
         <Navigation />
-        {children}
+        <Main />
+        {/* {children} */}
       </body>
     </html>
   )

@@ -3,10 +3,10 @@ import styles from './nav.module.css'
 
 const Navigation = () => {
   return (
-    <div className={styles.nav}>
+    <nav className={styles.nav}>
       {/* <div>IB</div> */}
       <NavLinks />
-    </div>
+    </nav>
   )
 }
 
