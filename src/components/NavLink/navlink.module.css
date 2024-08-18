@@ -25,3 +25,73 @@
 .item:hover {
   color: #fff;
 }
+
+/* For devices with a width of 1280px and below */
+@media (max-width: 1280px) {
+  .container {
+    margin-right: 3%;
+    gap: 3rem;
+    font-size: 1.1rem;
+  }
+
+  .button {
+    padding: 1.2rem;
+    font-size: 1rem;
+  }
+}
+
+/* For devices with a width of 1024px and below */
+@media (max-width: 1024px) {
+  .container {
+    margin-right: 2%;
+    gap: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .button {
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-radius: 1.5rem;
+  }
+}
+
+/* For devices with a width of 768px and below */
+@media (max-width: 768px) {
+  .container {
+    margin-right: 0.5rem;
+    gap: 2rem;
+    /* flex-direction: column; */
+    align-items: center;
+    align-self: center;
+  }
+
+  .button {
+    padding: 0.8rem;
+    font-size: 0.85rem;
+    border-radius: 1.2rem;
+  }
+
+  .item {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/* For devices with a width of 480px and below */
+@media (max-width: 480px) {
+  .container {
+    gap: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .button {
+    padding: 0.7rem;
+    font-size: 0.8rem;
+    border-radius: 1rem;
+  }
+
+  .item {
+    font-size: 0.9rem;
+    letter-spacing: 0.08rem;
+  }
+}

@@ -35,9 +35,9 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div className={styles.imageContainer}>
+      <div className={styles.meContainer}>
         <img
-          className={styles.image}
+          className={styles.me}
           src="/images/me.png"
           alt="Ishan in Udaipur"
         />
