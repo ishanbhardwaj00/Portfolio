@@ -1,0 +1,8 @@
+.nav {
+  height: 100px;
+  background-color: #30128b;
+  color: #9889c5; /*FOnt color for nav links #bcfce2 for contact button*/
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
