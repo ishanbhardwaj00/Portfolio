@@ -96,12 +96,30 @@ const Keyboard = () => {
           <span className={styles.skillName}>
             <img src="/images/r.png" alt="redis" />
           </span>
+          <div className={styles.expandedContainer}>
+            <div className={styles.expandedSkills}>
+              <span>
+                <img src="/images/redis.png" alt="skills" />
+              </span>
+              <span>Redis</span>
+              <img src="/images/react.png" alt="skills" />
+              <span>React</span>
+            </div>
+          </div>
         </div>
         <div className={`${styles.number} ${styles.key} ${styles.skillKey}`}>
           <span className={styles.char}>T</span>
           <span className={styles.skillName}>
             <img src="/images/t.png" alt="ts" />
           </span>
+          <div className={styles.expandedContainer}>
+            <div className={styles.expandedSkills}>
+              <span>
+                <img src="/images/t.png" alt="skills" />
+              </span>
+              <span>Typescript</span>
+            </div>
+          </div>
         </div>
         <div className={`${styles.number} ${styles.key}`}>
           <span>Y</span>
@@ -120,6 +138,14 @@ const Keyboard = () => {
           <span className={styles.skillName}>
             <img src="/images/p.png" alt="redis" />
           </span>
+          <div className={styles.expandedContainer}>
+            <div className={styles.expandedSkills}>
+              <span>
+                <img src="/images/p.png" alt="skills" />
+              </span>
+              <span>Python</span>
+            </div>
+          </div>
         </div>
         <div className={`${styles.number} ${styles.key}`}>
           <span className={styles.symbol}>&#123;</span>
@@ -143,30 +169,70 @@ const Keyboard = () => {
           <span className={styles.skillName}>
             <img src="/images/a.png" alt="aws" />
           </span>
+          <div className={styles.expandedContainer}>
+            <div className={styles.expandedSkills}>
+              <span>
+                <img src="/images/a.png" alt="skills" />
+              </span>
+              <span>AWS</span>
+            </div>
+          </div>
         </div>
         <div className={`${styles.number} ${styles.key} ${styles.skillKey}`}>
           <span className={styles.char}>S</span>
           <span className={styles.skillName}>
             <img src="/images/s.png" alt="SQL" />
           </span>
+          <div className={styles.expandedContainer}>
+            <div className={styles.expandedSkills}>
+              <span>
+                <img src="/images/s.png" alt="skills" />
+              </span>
+              <span>SQL</span>
+            </div>
+          </div>
         </div>
         <div className={`${styles.number} ${styles.key} ${styles.skillKey}`}>
           <span className={styles.char}>D</span>
           <span className={styles.skillName}>
             <img src="/images/d.png" alt="aws" />
           </span>
+          <div className={styles.expandedContainer}>
+            <div className={styles.expandedSkills}>
+              <span>
+                <img src="/images/d.png" alt="skills" />
+              </span>
+              <span>Docker</span>
+            </div>
+          </div>
         </div>
         <div className={`${styles.number} ${styles.key} ${styles.skillKey}`}>
           <span className={styles.char}>F</span>
           <span className={styles.skillName}>
             <img src="/images/f.png" alt="flutter" />
           </span>
+          <div className={styles.expandedContainer}>
+            <div className={styles.expandedSkills}>
+              <span>
+                <img src="/images/f.png" alt="skills" />
+              </span>
+              <span>Flutter</span>
+            </div>
+          </div>
         </div>
         <div className={`${styles.number} ${styles.key} ${styles.skillKey}`}>
           <span className={styles.char}>G</span>
           <span className={styles.skillName}>
             <img src="/images/g.png" alt="git" />
           </span>
+          <div className={styles.expandedContainer}>
+            <div className={styles.expandedSkills}>
+              <span>
+                <img src="/images/g.png" alt="skills" />
+              </span>
+              <span>Github</span>
+            </div>
+          </div>
         </div>
         <div className={`${styles.number} ${styles.key}`}>
           <span>H</span>
@@ -176,6 +242,14 @@ const Keyboard = () => {
           <span className={styles.skillName}>
             <img src="/images/j.png" alt="git" />
           </span>
+          <div className={styles.expandedContainer}>
+            <div className={styles.expandedSkills}>
+              <span>
+                <img src="/images/j.png" alt="skills" />
+              </span>
+              <span>JavaScript</span>
+            </div>
+          </div>
         </div>
         <div className={`${styles.number} ${styles.key}`}>
           <span>K</span>
@@ -222,6 +296,14 @@ const Keyboard = () => {
           <span className={styles.skillName}>
             <img src="/images/m.png" alt="mongodb" />
           </span>
+          <div className={styles.expandedContainer}>
+            <div className={styles.expandedSkills}>
+              <span>
+                <img src="/images/m.png" alt="skills" />
+              </span>
+              <span>MongoDB</span>
+            </div>
+          </div>
         </div>
         <div className={`${styles.number} ${styles.key}`}>
           <span className={styles.symbol}>&gt;</span>
