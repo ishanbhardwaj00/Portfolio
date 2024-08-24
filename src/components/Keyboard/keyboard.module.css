@@ -4,13 +4,32 @@
   width: 100%;
   aspect-ratio: 2.49;
   gap: 5px;
+  font-size: 0.75rem;
 }
 
 .key {
   background-color: #44279b;
-  border-radius: 1rem;
-  transition: 150ms all;
+  border-radius: 0.5rem;
+  transition: 300ms all;
   position: relative;
+  overflow: hidden;
+}
+
+/* .main:hover .key {
+  background-color: #c7c7c7;
+  background-color: #f4f4f5;
+} */
+.row1 {
+  display: flex;
+  gap: 5px;
+  color: white;
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+.main:hover .skillName {
+  opacity: 1;
 }
 
 .skillName {
@@ -18,10 +37,83 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  opacity: 0;
   transform: scale(1.25);
+  opacity: 0;
   height: 100%;
-  transition: 1500ms opacity;
+  transition: 150ms opacity;
+}
+
+.skillKey:hover .skillName {
+  opacity: 0;
+}
+
+.skillKey:hover .expandedSkills {
+  opacity: 1;
+  width: 350%;
+}
+
+.expandedSkills > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.expandedSkills img {
+  height: 100%;
+}
+.expandedSkills {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  border-radius: 1rem;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  gap: 1rem;
+  letter-spacing: 1px;
+  height: 100%;
+  color: black;
+  background-color: #f4f4f4;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  opacity: 0;
+  width: 0;
+  transition: all 300ms ease-in-out;
+  transform-origin: center;
+}
+.expandedContainer {
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.expandedSkills {
+  display: flex;
+}
+
+.main:hover .key {
+  background-color: #c7c7c7;
+}
+.key:not(.skillKey) > span {
+  transform: translateY(0%);
+  transition: 500ms all;
+}
+.main:hover
+  .key:not(.esc):not(.powerButton):not(.caps):not(.tab):not(.shift):not(
+    .textSm
+  ):not(.delete):not(.return):not(.skillKey)
+  > span {
+  transform: translateY(500%);
+  opacity: 0;
+}
+.main:hover .skillKey {
+  background-color: #f4f4f4;
+  transition: 150ms all;
+  font-size: 0;
 }
 .skillName > img {
   object-fit: fill;
@@ -29,21 +121,6 @@
 .number {
   flex: 6.6;
   overflow: visible;
-}
-.main:hover .key {
-  background-color: #c7c7c7;
-}
-
-.main:hover .skillKey {
-  background-color: #f4f4f5;
-  position: relative;
-  height: 100%;
-}
-.main:hover .skillName {
-  opacity: 1;
-}
-.main:active .key {
-  background-color: #c7c7c7;
 }
 .row {
   display: flex;
@@ -55,38 +132,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.skillKey:hover .expandedContainer {
-  display: flex;
-  z-index: 1;
-  opacity: 1;
-  width: max-content;
-  padding: 0 1rem;
-}
-.expandedContainer {
-  position: absolute;
-  left: 0;
-  height: 100%;
-  border-radius: 1rem;
-  width: 0%;
-  transition: width 300ms ease-in;
-  background-color: white;
-  opacity: 0;
-}
-
-.expandedSkills {
-  display: flex;
-  flex-direction: row;
-  font-weight: 700;
-  color: black;
-  gap: 1rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.expandedSkills img {
-  height: 100%;
-  object-fit: fill;
-}
 .row > div {
   display: flex;
   flex-direction: column;
@@ -96,11 +141,12 @@
 }
 .esc {
   display: flex;
-  justify-content: flex-start;
+  justify-content: start;
+  align-items: center;
   gap: 1px;
-  align-items: last baseline;
   width: 11.8%;
   padding-bottom: 7px;
+  height: 100%;
   padding-left: 7px;
   cursor: pointer;
 }
@@ -119,6 +165,10 @@
 }
 
 .powerButton {
+  display: flex;
+  padding-right: 1rem;
+  justify-content: flex-end;
+  align-items: center;
   width: 8.7%;
   border-radius: 1rem;
   cursor: pointer;
