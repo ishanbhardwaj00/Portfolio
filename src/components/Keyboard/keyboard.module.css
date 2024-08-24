@@ -67,8 +67,8 @@
   left: 0;
   height: 100%;
   border-radius: 1rem;
-  /* width: 800%; */
-  transition: opacity 300ms ease-in;
+  width: 0%;
+  transition: width 300ms ease-in;
   background-color: white;
   opacity: 0;
 }
