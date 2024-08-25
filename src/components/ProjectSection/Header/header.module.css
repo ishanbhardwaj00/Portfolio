@@ -1,0 +1,14 @@
+.header {
+  flex: 3;
+  color: #bdfde3;
+  display: flex;
+  flex-direction: column;
+  font-size: 6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle {
+  font-size: 8rem;
+  font-weight: bold;
+}

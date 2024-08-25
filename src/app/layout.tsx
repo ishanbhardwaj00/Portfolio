@@ -6,6 +6,7 @@ import Home from './page'
 import Navigation from '@/components/Navigation/Navigation'
 import Main from '@/components/Main/Main'
 import Skills from '@/components/Skills/Skills'
+import ProjectSection from '@/components/ProjectSection/ProjectSection'
 
 export const metadata: Metadata = {
   title: 'Ishan | Portfolio',
@@ -23,6 +24,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
         <Navigation />
         <Main />
         <Skills />
+        <ProjectSection />
         {/* {children} */}
       </body>
     </html>
