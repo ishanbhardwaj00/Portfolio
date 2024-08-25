@@ -1,6 +1,6 @@
 import Divider from './Divider/Divider'
 import Header from './Header/Header'
-import styles from './projects.module.css'
+import styles from './project_section.module.css'
 import Projects from './Projects/Projects'
 
 const ProjectSection = () => {

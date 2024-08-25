@@ -1,4 +1,45 @@
 .main {
   flex: 7;
   /* background-color: white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.projectsContainer {
+  display: flex;
+  padding: 5rem;
+  flex-direction: column;
+  justify-content: start;
+  width: 80%;
+  height: 100%;
+  /* background-color: black; */
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.projectTitle {
+  font-size: 3.2rem;
+  font-style: italic;
+  color: white;
+  font-weight: bold;
+}
+
+.projectCard {
+  width: 20%;
+  aspect-ratio: calc(1 / 1.56);
+  background: rgb(68, 39, 155);
+  background: radial-gradient(
+    circle,
+    rgba(68, 39, 155, 1) 0%,
+    rgba(102, 203, 241, 1) 99%
+  );
+  box-shadow: 2px 2px grey;
+  border-radius: 2rem;
+}
+
+.projectList {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
