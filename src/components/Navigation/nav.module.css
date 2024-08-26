@@ -1,12 +1,16 @@
 .nav {
   height: 100px;
-  background-color: #17142f;
+  background-color: var(--nav-bg);
   width: 100%;
-  color: #9889c5; /*FOnt color for nav links #bcfce2 for contact button*/
+  color: var(--nav-col); /*FOnt color for nav links #bcfce2 for contact button*/
   display: flex;
   flex-direction: row-reverse;
   position: fixed;
   top: 0px;
   z-index: 1;
   align-items: center;
+}
+
+.hide {
+  transform: translateX(-100%);
 }

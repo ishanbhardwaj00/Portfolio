@@ -6,7 +6,48 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+:root {
+  --nav-bg-lt: #30128b;
+  --nav-bg-dk: #17142f;
+  --nav-col-lt: #9889c5;
+  --nav-btn-lt: #bcfce2;
+  --nav-btn-dk: #c5adf3;
+}
+[data-theme='light'] {
+  --nav-bg: #30128b;
+  --nav-col: #9889c5;
+  --nav-btn: #bcfce2;
+  --main-bg: #44279b;
+  --aboutMe-col: #fff;
+  --fullName-col: #bdfde3;
+  --skillContainer-bg: #fff;
+  --skillContainer-boxShadow-col: #c7c7c7;
+  --skills-heading-col: #000;
+  --skills-subHeading-col: grey;
+  --key-bg: #44279b;
+  --key-hover-bg: #c7c7c7;
+  --key-col: #fff;
+  --projectHeader-col: #bdfde3;
+  --projectTitle-col: #fff;
+}
 
+[data-theme='dark'] {
+  --nav-bg: #17142f;
+  --nav-col: #9889c5;
+  --nav-btn: #c5adf3;
+  --main-bg: #17142f;
+  --aboutMe-col: #a2d8c6;
+  --fullName-col: #793bcf;
+  --skillContainer-bg: #2f214d;
+  --skillContainer-boxShadow-col: #c7c7c7;
+  --skills-heading-col: #9747ff;
+  --skills-subHeading-col: #a2d8c6;
+  --key-bg: rgba(229, 216, 255, 255);
+  --key-hover-bg: #000;
+  --key-col: #000;
+  --projectHeader-col: #793bcf;
+  --projectTitle-col: #793bcf;
+}
 html,
 body,
 div,
@@ -133,5 +174,5 @@ table {
 }
 
 body {
-  background-color: #17142f;
+  background-color: var(--main-bg);
 }

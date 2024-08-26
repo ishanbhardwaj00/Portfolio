@@ -8,8 +8,8 @@
 }
 
 .key {
-  background-color: rgba(229, 216, 255, 255);
-  color: black;
+  background-color: var(--key-bg);
+  color: var(--key-col);
   border-radius: 0.5rem;
   transition: 300ms all;
   position: relative;
@@ -50,7 +50,7 @@
 
 .skillKey:hover .expandedSkills {
   opacity: 1;
-  box-shadow: -5px -5px grey inset;
+  box-shadow: 5px 5px grey;
   width: max-content;
   transform: scaleX(1);
 }
@@ -92,7 +92,7 @@
 }
 
 .main:hover .key {
-  background-color: #000;
+  background-color: var(--key-hover-bg);
 }
 .key:not(.skillKey) > span {
   transform: translateY(0%);

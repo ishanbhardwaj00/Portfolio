@@ -21,7 +21,7 @@
 .projectTitle {
   font-size: 3.2rem;
   font-style: italic;
-  color: #793bcf;
+  color: var(--projectTitle-col);
   font-weight: bold;
 }
 

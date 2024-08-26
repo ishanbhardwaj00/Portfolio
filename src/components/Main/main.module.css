@@ -1,9 +1,10 @@
 .main {
-  height: calc(100vh - 100px);
+  height: 100vh;
   position: relative;
-  background-color: #17142f;
+  background-color: var(--main-bg);
   display: flex;
   align-items: center;
+  /* margin-top: var(--nav-height); */
   justify-content: center;
   padding: 0 5rem;
   overflow: hidden;
@@ -28,19 +29,19 @@
 }
 .aboutMe {
   font-size: 1.3rem;
-  color: #a2d8c6;
+  color: var(--aboutMe-col);
   line-height: 2rem;
 }
 
 .firstName {
   font-size: 6rem;
   font-weight: bold;
-  color: #793bcf;
+  color: var(--fullName-col);
 }
 .lastName {
   font-size: 6rem;
   font-weight: bold;
-  color: #793bcf;
+  color: var(--fullName-col);
 }
 
 .code {

@@ -6,7 +6,7 @@
 }
 
 .button {
-  background-color: #c5adf3;
+  background-color: var(--nav-btn);
   color: #676565;
   padding: 1.5rem;
   border-radius: 2rem;

@@ -1,6 +1,6 @@
 .header {
   flex: 3;
-  color: #793bcf;
+  color: var(--projectHeader-col);
   display: flex;
   flex-direction: column;
   font-size: 6rem;

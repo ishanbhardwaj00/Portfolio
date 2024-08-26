@@ -1,8 +1,8 @@
 .container {
   height: 100vh;
-  background-color: #2f214d;
+  background-color: var(--skillContainer-bg);
   border-top-left-radius: 20rem;
-  /* box-shadow: inset #c7c7c7 15px 15px 12px; */
+  /* box-shadow: inset var(--skillContainer-boxShadow-col) 15px 15px 12px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,7 +28,7 @@
 
 .heading {
   font-size: 4rem;
-  color: #9747ff;
+  color: var(--skills-heading-col);
   font-weight: 700;
 }
 
@@ -36,6 +36,6 @@
   font-size: 1.8rem;
   font-weight: 100;
   font-family: Arial, Helvetica, sans-serif;
-  color: #a2d8c6;
+  color: var(--skills-subHeading-col);
   letter-spacing: 2px;
 }
