@@ -8,7 +8,8 @@
 }
 
 .key {
-  background-color: #44279b;
+  background-color: rgba(229, 216, 255, 255);
+  color: black;
   border-radius: 0.5rem;
   transition: 300ms all;
   position: relative;
@@ -91,7 +92,7 @@
 }
 
 .main:hover .key {
-  background-color: #c7c7c7;
+  background-color: #000;
 }
 .key:not(.skillKey) > span {
   transform: translateY(0%);

@@ -1,15 +1,14 @@
 .container {
   height: 100vh;
-  background-color: #fff;
+  background-color: #2f214d;
   border-top-left-radius: 20rem;
-  box-shadow: inset #c7c7c7 15px 15px 12px;
+  /* box-shadow: inset #c7c7c7 15px 15px 12px; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .main {
-  /* background-color: pink; */
   width: 70%;
   height: 80%;
   padding: 0 5%;
@@ -29,6 +28,7 @@
 
 .heading {
   font-size: 4rem;
+  color: #9747ff;
   font-weight: 700;
 }
 
@@ -36,6 +36,6 @@
   font-size: 1.8rem;
   font-weight: 100;
   font-family: Arial, Helvetica, sans-serif;
-  color: grey;
+  color: #a2d8c6;
   letter-spacing: 2px;
 }

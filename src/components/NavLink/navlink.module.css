@@ -6,7 +6,7 @@
 }
 
 .button {
-  background-color: #bcfce2;
+  background-color: #c5adf3;
   color: #676565;
   padding: 1.5rem;
   border-radius: 2rem;
@@ -14,7 +14,7 @@
 }
 
 .button:hover {
-  background-color: #d7d4d4;
+  opacity: 0.6;
 }
 .item {
   align-content: center;

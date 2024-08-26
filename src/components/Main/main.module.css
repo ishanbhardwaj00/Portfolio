@@ -1,7 +1,7 @@
 .main {
   height: calc(100vh - 100px);
   position: relative;
-  background-color: #44279b;
+  background-color: #17142f;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,19 +28,19 @@
 }
 .aboutMe {
   font-size: 1.3rem;
-  color: white;
+  color: #a2d8c6;
   line-height: 2rem;
 }
 
 .firstName {
   font-size: 6rem;
   font-weight: bold;
-  color: #bdfde3;
+  color: #793bcf;
 }
 .lastName {
   font-size: 6rem;
   font-weight: bold;
-  color: #bdfde3;
+  color: #793bcf;
 }
 
 .code {
